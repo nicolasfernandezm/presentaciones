@@ -1,0 +1,35 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Dependency and build caches
+node_modules/
+dist/
+build/
+.cache/
+.vercel/
+
+# Logs
+*.log
+
+# Delivery exports and bulky handoff files
+*.zip
+*.rar
+*.7z
+*.pdf
+*.pptx
+*.psd
+*.ai
+*.sketch
+
+# Generated/extracted working folders that are not part of the deployable site
+Roxom_extracted/
+Roxom TV_extracted/
+Gloaming Visual Kit/
+**/assets/extracted-pdf/
+
+# Suspicious double-extension exports
+**/*.jpg.png

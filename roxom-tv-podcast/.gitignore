@@ -1,0 +1,28 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Dependency and build caches
+node_modules/
+dist/
+build/
+.cache/
+.vercel/
+
+# Logs
+*.log
+
+# Archive and source exports that should not be committed
+*.zip
+*.rar
+*.7z
+*.pdf
+*.pptx
+*.psd
+*.ai
+*.sketch
+*.tmp
+*.swp
