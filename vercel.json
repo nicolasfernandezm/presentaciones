@@ -48,6 +48,18 @@
     {
       "source": "/roxom-tv-podcast/:path*",
       "destination": "/Presentaciones/roxom-tv-podcast/:path*"
+    },
+    {
+      "source": "/kaiyi-argentina-correcciones",
+      "destination": "/Presentaciones/kaiyi-argentina-correcciones/index.html"
+    },
+    {
+      "source": "/kaiyi-argentina-correcciones/",
+      "destination": "/Presentaciones/kaiyi-argentina-correcciones/index.html"
+    },
+    {
+      "source": "/kaiyi-argentina-correcciones/:path*",
+      "destination": "/Presentaciones/kaiyi-argentina-correcciones/:path*"
     }
   ]
 }
