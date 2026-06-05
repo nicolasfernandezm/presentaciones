@@ -1,0 +1,36 @@
+{
+  "rewrites": [
+    {
+      "source": "/belada-padel",
+      "destination": "/Presentaciones/belada-padel"
+    },
+    {
+      "source": "/belada-padel/:path*",
+      "destination": "/Presentaciones/belada-padel/:path*"
+    },
+    {
+      "source": "/copa-marea",
+      "destination": "/Presentaciones/copa-marea"
+    },
+    {
+      "source": "/copa-marea/:path*",
+      "destination": "/Presentaciones/copa-marea/:path*"
+    },
+    {
+      "source": "/pepsi-mango-beat",
+      "destination": "/Presentaciones/pepsi-mango-beat"
+    },
+    {
+      "source": "/pepsi-mango-beat/:path*",
+      "destination": "/Presentaciones/pepsi-mango-beat/:path*"
+    },
+    {
+      "source": "/roxom-tv-podcast",
+      "destination": "/Presentaciones/roxom-tv-podcast"
+    },
+    {
+      "source": "/roxom-tv-podcast/:path*",
+      "destination": "/Presentaciones/roxom-tv-podcast/:path*"
+    }
+  ]
+}
