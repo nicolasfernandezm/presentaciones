@@ -1,8 +1,13 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
       "source": "/belada-padel",
-      "destination": "/Presentaciones/belada-padel"
+      "destination": "/Presentaciones/belada-padel/index.html"
+    },
+    {
+      "source": "/belada-padel/",
+      "destination": "/Presentaciones/belada-padel/index.html"
     },
     {
       "source": "/belada-padel/:path*",
@@ -10,7 +15,11 @@
     },
     {
       "source": "/copa-marea",
-      "destination": "/Presentaciones/copa-marea"
+      "destination": "/Presentaciones/copa-marea/index.html"
+    },
+    {
+      "source": "/copa-marea/",
+      "destination": "/Presentaciones/copa-marea/index.html"
     },
     {
       "source": "/copa-marea/:path*",
@@ -18,7 +27,11 @@
     },
     {
       "source": "/pepsi-mango-beat",
-      "destination": "/Presentaciones/pepsi-mango-beat"
+      "destination": "/Presentaciones/pepsi-mango-beat/index.html"
+    },
+    {
+      "source": "/pepsi-mango-beat/",
+      "destination": "/Presentaciones/pepsi-mango-beat/index.html"
     },
     {
       "source": "/pepsi-mango-beat/:path*",
@@ -26,7 +39,11 @@
     },
     {
       "source": "/roxom-tv-podcast",
-      "destination": "/Presentaciones/roxom-tv-podcast"
+      "destination": "/Presentaciones/roxom-tv-podcast/index.html"
+    },
+    {
+      "source": "/roxom-tv-podcast/",
+      "destination": "/Presentaciones/roxom-tv-podcast/index.html"
     },
     {
       "source": "/roxom-tv-podcast/:path*",
