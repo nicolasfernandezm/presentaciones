@@ -50,15 +50,15 @@
       "destination": "/Presentaciones/roxom-tv-podcast/:path*"
     },
     {
-      "source": "/kaiyi-argentina-correcciones",
+      "source": "/kaiyi-argentina",
       "destination": "/Presentaciones/kaiyi-argentina-correcciones/index.html"
     },
     {
-      "source": "/kaiyi-argentina-correcciones/",
+      "source": "/kaiyi-argentina/",
       "destination": "/Presentaciones/kaiyi-argentina-correcciones/index.html"
     },
     {
-      "source": "/kaiyi-argentina-correcciones/:path*",
+      "source": "/kaiyi-argentina/:path*",
       "destination": "/Presentaciones/kaiyi-argentina-correcciones/:path*"
     }
   ]
