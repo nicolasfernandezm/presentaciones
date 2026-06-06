@@ -478,6 +478,41 @@ a{color:inherit;text-decoration:none}
 .surge-yaxis{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;font-size:11px;color:var(--t3);font-weight:600;padding:4px 0 26px}
 .surge-xaxis{grid-column:2;display:flex;justify-content:space-between;font-size:11px;color:var(--t3);font-weight:600;margin-top:6px}
 
+/* ---------- Origin line chart ---------- */
+.origin-card{padding:30px 32px 26px}
+.origin-legend{display:flex;gap:30px;align-items:center;margin-bottom:14px;flex-wrap:wrap}
+.origin-legend span{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:700;color:var(--t2)}
+.origin-legend i{width:42px;height:5px;border-radius:999px;display:inline-block}
+.origin-legend i.imp{background:var(--red)}
+.origin-legend i.dom{background:#3f7dd8}
+.origin-chart{height:clamp(300px,42vw,430px);max-width:100%;overflow-x:auto;overflow-y:hidden}
+.origin-chart svg{width:100%;height:100%;overflow:hidden;display:block}
+.origin-grid line{stroke:rgba(255,255,255,.08);stroke-width:1}
+.origin-y text,.origin-x text{fill:var(--t3);font-size:12px;font-weight:700}
+.origin-line{fill:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 8px 14px rgba(0,0,0,.45))}
+.origin-line.imp{stroke:var(--red)}
+.origin-line.dom{stroke:#3f7dd8}
+.origin-end{font-size:22px;font-weight:900}
+.origin-end.imp{fill:var(--red)}
+.origin-end.dom{fill:#6ea4ff}
+
+/* ---------- X7 price band charts ---------- */
+.x7-chart-stack{display:flex;flex-direction:column;gap:24px}
+.price-band-chart{padding:28px 30px 30px}
+.hybrid-legend{display:inline-flex;align-items:center;gap:9px;font-size:12px;color:var(--t2);font-weight:700;margin:-8px 0 18px}
+.hybrid-legend span{width:16px;height:16px;border-radius:4px;background:var(--red);box-shadow:0 0 0 4px rgba(255,0,0,.16)}
+.band-axis{display:flex;justify-content:space-between;margin-left:190px;padding-bottom:10px;border-bottom:1px solid var(--line-2);font-size:11px;color:var(--t3);font-weight:800}
+.band-rows{display:flex;flex-direction:column;gap:13px;margin-top:14px}
+.band-rows.dense{gap:9px}
+.band-row{display:grid;grid-template-columns:170px 1fr;gap:20px;align-items:center}
+.band-label{font-size:14px;color:var(--t2);font-weight:700;text-align:right;line-height:1.15}
+.band-track{position:relative;height:34px;background:linear-gradient(90deg,rgba(255,255,255,.035),rgba(255,255,255,.01));border-radius:7px;overflow:hidden}
+.band-track::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.13) 0 1px,transparent 1px 12.5%);opacity:.55}
+.band-fill{position:absolute;left:var(--start);width:var(--width);top:5px;height:24px;min-width:48px;border-radius:6px;background:#33363b;display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:900;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.band-row.hybrid .band-label{color:#fff}
+.band-row.hybrid .band-fill{background:linear-gradient(90deg,var(--red-deep),var(--red));box-shadow:0 0 0 1px rgba(255,255,255,.12),0 0 22px rgba(255,0,0,.25)}
+.band-row.hybrid .band-track{box-shadow:inset 0 0 0 1px rgba(255,0,0,.4);background:rgba(255,0,0,.06)}
+
 /* ---------- Phone mockups ---------- */
 .phone-row{display:flex;gap:36px;justify-content:center;flex-wrap:wrap;align-items:flex-start}
 .phone-mock{width:300px;max-width:84vw;border:11px solid #16181c;border-radius:40px;overflow:hidden;background:#000;
@@ -570,6 +605,14 @@ a{color:inherit;text-decoration:none}
   .org-row{grid-template-columns:repeat(2,1fr)}
   .org-card,.org-card.lead-card{width:100%}
   .stack-row{grid-template-columns:70px 1fr;gap:12px}
+  .origin-card{padding:22px 18px}
+  .origin-chart{height:300px}
+  .origin-y text,.origin-x text{font-size:14px}
+  .origin-end{font-size:18px}
+  .band-axis{margin-left:0;font-size:10px}
+  .band-row{grid-template-columns:1fr;gap:7px}
+  .band-label{text-align:left}
+  .band-track{height:36px}
   .persona2{grid-template-columns:1fr}
   .persona2 .p2-side img{min-height:300px}
   .p2-cols,.p2-msgs{grid-template-columns:1fr}
