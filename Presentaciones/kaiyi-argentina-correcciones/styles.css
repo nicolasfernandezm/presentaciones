@@ -390,6 +390,27 @@ a{color:inherit;text-decoration:none}
 .locations{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .loc{font-size:13px;font-weight:600;color:#fff;border:1px solid var(--line-2);border-radius:8px;padding:9px 16px;background:var(--card)}
 
+/* ---------- Dealer network ---------- */
+.dealer-network{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.9fr);gap:34px;align-items:center}
+.dealer-cards{display:flex;flex-direction:column;gap:18px}
+.dealer-card{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.22)}
+.dealer-card-head{padding:22px 24px 18px;border-bottom:1px solid var(--line);background:rgba(0,0,0,.18)}
+.dealer-kicker{display:block;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:7px}
+.dealer-card h3{font-size:clamp(20px,2vw,28px);font-weight:900;line-height:1.05;letter-spacing:-.01em}
+.dealer-table{display:flex;flex-direction:column}
+.dealer-row{display:grid;grid-template-columns:1.05fr 1fr;gap:16px;padding:11px 24px;border-bottom:1px solid rgba(255,255,255,.07);align-items:center}
+.dealer-row:last-child{border-bottom:none}
+.dealer-row:nth-child(even){background:rgba(255,255,255,.035)}
+.dealer-row-head{background:#232323;color:#fff;text-transform:uppercase;letter-spacing:.08em;font-size:11px;font-weight:900}
+.dealer-row strong{font-size:13px;text-transform:uppercase;color:#fff;line-height:1.25}
+.dealer-row span{font-size:13px;color:var(--t2);line-height:1.3}
+.dealer-card-prospects{border-color:rgba(255,0,0,.28)}
+.dealer-card-prospects .dealer-row:nth-child(even){background:rgba(255,0,0,.055)}
+.dealer-card-prospects .dealer-row-head{background:linear-gradient(90deg,rgba(255,0,0,.28),rgba(255,0,0,.08))}
+.dealer-map{position:relative;display:flex;justify-content:center;align-items:center;min-height:680px}
+.dealer-map::before{content:'';position:absolute;inset:8% 3%;background:radial-gradient(circle at 50% 45%,rgba(255,0,0,.22),transparent 58%);filter:blur(28px);opacity:.8}
+.dealer-map img{position:relative;z-index:1;width:100%;max-height:780px;object-fit:contain;filter:drop-shadow(0 0 28px rgba(255,0,0,.22))}
+
 /* ---------- CTA / closing ---------- */
 .cta{position:relative;text-align:center;padding:clamp(90px,12vw,160px) 0;overflow:hidden;
   background:radial-gradient(90% 80% at 50% 40%,rgba(255,0,0,.18),transparent 60%),#070707}
@@ -613,6 +634,11 @@ a{color:inherit;text-decoration:none}
   .band-row{grid-template-columns:1fr;gap:7px}
   .band-label{text-align:left}
   .band-track{height:36px}
+  .dealer-network{grid-template-columns:1fr;gap:28px}
+  .dealer-map{min-height:0}
+  .dealer-map img{max-height:620px}
+  .dealer-row{grid-template-columns:1fr;gap:4px;padding:11px 18px}
+  .dealer-row-head{grid-template-columns:1fr 1fr;gap:12px}
   .persona2{grid-template-columns:1fr}
   .persona2 .p2-side img{min-height:300px}
   .p2-cols,.p2-msgs{grid-template-columns:1fr}
