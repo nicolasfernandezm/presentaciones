@@ -30,6 +30,7 @@ Roxom_extracted/
 Roxom TV_extracted/
 Gloaming Visual Kit/
 **/assets/extracted-pdf/
+**/assets/videos/originals/
 
 # Suspicious double-extension exports
 **/*.jpg.png
