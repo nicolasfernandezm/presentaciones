@@ -60,6 +60,18 @@
     {
       "source": "/kaiyi-argentina/:path*",
       "destination": "/Presentaciones/kaiyi-argentina-correcciones/:path*"
+    },
+    {
+      "source": "/roblox-activations",
+      "destination": "/Presentaciones/roblox-activations-gloaming/index.html"
+    },
+    {
+      "source": "/roblox-activations/",
+      "destination": "/Presentaciones/roblox-activations-gloaming/index.html"
+    },
+    {
+      "source": "/roblox-activations/:path*",
+      "destination": "/Presentaciones/roblox-activations-gloaming/:path*"
     }
   ]
 }
