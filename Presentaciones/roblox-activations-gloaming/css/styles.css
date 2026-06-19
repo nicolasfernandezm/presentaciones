@@ -659,6 +659,10 @@ p { color: var(--muted); font-size: 17px; line-height: 1.55; }
 }
 .creation-card .media-slot { background: #080b09; }
 .creation-card .media-slot .media-mirror { display: block; opacity: .3; }
+.creation-card:nth-child(2) .media-slot {
+  aspect-ratio: 64 / 29;
+}
+.creation-card:nth-child(2) .media-slot .media-mirror { display: none; }
 .creation-copy { align-self: center; padding: 10px 8px 8px; }
 .creation-copy h3 { font-size: clamp(30px, 4vw, 48px); }
 .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 18px; }
