@@ -908,6 +908,8 @@ p { color: var(--muted); font-size: 17px; line-height: 1.55; }
   }
   .map-node:nth-child(even) { margin-top: 0; }
   .map-node:nth-child(3n), .map-node:nth-child(4n) { margin-top: 0; }
+  .map-node { padding: 78px 18px 18px; }
+  .map-node > i:not(.checkpoint-flag) { display: none; }
   .map-node:not(:last-child)::after {
     content: "↓";
     left: 50%;
@@ -916,7 +918,7 @@ p { color: var(--muted); font-size: 17px; line-height: 1.55; }
     bottom: -26px;
     transform: translateX(-50%);
   }
-  .checkpoint-flag { left: -42px; top: 18px; }
+  .checkpoint-flag { left: 18px; top: 18px; }
   .bar { grid-template-columns: 70px 1fr 42px; gap: 8px; }
   .footer-inner { align-items: flex-start; flex-direction: column; }
   .closing { min-height: 560px; }
