@@ -501,9 +501,23 @@ html[lang="en"] .s21-nav-logo { display: none; }
   .section-head { margin-bottom: 40px; }
 
   /* hero tightened */
-  .hero h1 { font-size: clamp(38px, 12vw, 60px); }
-  .hero-sub { font-size: 16px; }
-  .hero-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 24px; }
+  .hero { overflow: clip; }
+  .hero-text { min-width: 0; max-width: 100%; overflow: hidden; }
+  .hero h1 { max-width: 100%; font-size: clamp(38px, 11.2vw, 54px); line-height: 1.02; }
+  .hero h1 .l { max-width: 100%; }
+  .hero h1 .grad-violet,
+  .hero h1 .grad-text {
+    width: auto;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+    line-height: .96;
+    padding-right: 0;
+  }
+  .hero-sub { max-width: 100%; font-size: 16px; overflow-wrap: break-word; }
+  .hero-meta { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px 24px; }
+  .hero-meta .m-v { overflow-wrap: anywhere; }
   .hero-visual img { width: 52%; }
   .hero-scroll { display: none; }
   .ticks { display: none; }
