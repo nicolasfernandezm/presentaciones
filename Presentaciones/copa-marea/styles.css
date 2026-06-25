@@ -1033,6 +1033,7 @@ html[lang="en"] .s21-nav-logo { display: none; }
 .host-mini img { width:72px; height:72px; object-fit:cover; object-position:center 18%; border-radius:50%; border:1px solid var(--border-green); }
 .host-mini p { display:grid; gap:4px; color:var(--t-2); font-size:13px; line-height:1.45; }
 .host-mini strong { color:var(--t-1); }
+.host-ig-btn { margin-top:18px; }
 .funnel-strip { display:flex; gap:14px; align-items:stretch; margin-top:34px; padding:18px; border:1px solid var(--border-green); border-radius:var(--radius-sm); background:linear-gradient(135deg,var(--surface-2),rgba(93,63,211,.14)); }
 .funnel-strip div { flex:1 1 0; min-height:72px; display:grid; place-items:center; text-align:center; gap:4px; padding:12px; border:1px solid var(--border); border-radius:12px; background:rgba(8,7,11,.52); }
 .funnel-strip i { display:grid; place-items:center; }
@@ -1050,6 +1051,7 @@ html[lang="en"] .s21-nav-logo { display: none; }
 .campaign-visual-moment h3 { margin:18px 0 20px; font-size:24px; text-transform:uppercase; letter-spacing:-.02em; }
 .campaign-visual-grid { display:grid; gap:16px; }
 .campaign-visual-grid.one { grid-template-columns:minmax(0,1fr); }
+.campaign-visual-grid.two { grid-template-columns:repeat(2,minmax(0,1fr)); }
 .campaign-visual-grid.three { grid-template-columns:repeat(3,minmax(0,1fr)); }
 .campaign-visual-card { min-height:100%; padding:16px 16px 20px; border:1px solid var(--border); border-radius:16px; background:rgba(8,7,11,.34); }
 .campaign-visual-card .activation-media { margin-bottom:18px; }
@@ -1064,6 +1066,41 @@ html[lang="en"] .s21-nav-logo { display: none; }
 .measurement-grid span { padding:16px 18px; border:1px solid var(--border); border-radius:999px; background:var(--surface); color:var(--t-2); font-size:13px; text-align:center; }
 .measurement-grid.compact { grid-template-columns:repeat(4,1fr); }
 .s21-packages { grid-template-columns:repeat(2,1fr); }
+.phone-reference-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.phone-reference-card { min-height:100%; display:flex; flex-direction:column; gap:12px; padding:16px; border:1px solid var(--border); border-radius:var(--radius-sm); background:rgba(8,7,11,.34); }
+.video-phone { position:relative; width:min(100%,230px); aspect-ratio:9/16; margin:0 auto 8px; padding:10px; border:1px solid var(--border-2); border-radius:34px; background:#0f0d15; box-shadow:0 18px 54px rgba(93,63,211,.2),inset 0 0 0 6px #191622; overflow:hidden; }
+.video-phone::before { content:""; position:absolute; top:8px; left:50%; z-index:2; width:52px; height:5px; transform:translateX(-50%); border-radius:999px; background:rgba(255,255,255,.22); }
+.video-phone video { width:100%; height:100%; display:block; border:0; border-radius:24px; background:#08070b; object-fit:cover; }
+.phone-reference-card .idea-k { width:max-content; padding:7px 10px; border:1px solid var(--border-green); border-radius:999px; color:var(--lavanda); background:rgba(93,63,211,.12); font-size:10px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+.phone-reference-card h4 { min-height:42px; margin:4px 0 0; font-size:17px; line-height:1.1; text-transform:uppercase; letter-spacing:0; }
+.phone-reference-card p { color:var(--t-2); font-size:13px; line-height:1.5; }
+.creator-offers { margin-top:22px; }
+.asset-image-box { position:relative; min-height:260px; display:grid; place-items:center; margin-bottom:18px; border:1px dashed rgba(183,165,255,.42); border-radius:16px; background:linear-gradient(135deg,rgba(93,63,211,.14),rgba(8,7,11,.74)); box-shadow:inset 0 0 0 1px rgba(255,255,255,.025),0 18px 40px rgba(0,0,0,.18); overflow:hidden; }
+.asset-image-box span { position:relative; z-index:1; max-width:22ch; color:var(--lavanda); font-size:12px; font-weight:800; letter-spacing:.08em; line-height:1.35; text-align:center; text-transform:uppercase; }
+.asset-image-box img { position:absolute; inset:0; z-index:2; width:100%; height:100%; object-fit:cover; background:#08070b; }
+.traffic-offers { margin-top:22px; }
+.youtube-chat-mock { min-height:306px; display:flex; flex-direction:column; margin-bottom:18px; border:1px solid var(--border); border-radius:16px; background:#111; box-shadow:inset 0 0 0 1px rgba(255,255,255,.025),0 18px 40px rgba(0,0,0,.18); overflow:hidden; }
+.yt-top { display:flex; align-items:center; justify-content:space-between; min-height:46px; padding:0 14px; border-bottom:1px solid rgba(255,255,255,.1); color:var(--t-2); font-size:12px; font-weight:700; }
+.yt-top i { padding:5px 8px; border-radius:999px; background:#c00; color:#fff; font-size:9px; font-style:normal; letter-spacing:.1em; }
+.yt-msg { display:grid; gap:8px; margin:18px 14px auto; padding:14px; border-radius:12px; background:#202020; }
+.yt-msg b { color:#fff; font-size:13px; }
+.yt-msg p { color:#d7d7d7; font-size:13px; line-height:1.45; }
+.yt-msg a { width:max-content; padding:7px 10px; border-radius:999px; background:var(--acid); color:#0b0b0b; font-size:11px; font-weight:800; text-transform:uppercase; }
+.yt-input { margin:16px 14px 14px; padding:11px 12px; border:1px solid rgba(255,255,255,.12); border-radius:999px; color:#777; font-size:12px; }
+.brand-offer-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.brand-offer-grid .campaign-visual-card { padding:14px 14px 18px; }
+.brand-offer-grid .activation-media { aspect-ratio:4/3; }
+.brand-offer-grid .activation-media img { width:100%; height:100%; object-fit:cover; }
+.brand-offer-grid .activation-media.streaming-bug { padding:16px; background:#08070b; }
+.brand-offer-grid .activation-media.streaming-bug img { object-fit:contain; }
+.pkg-split { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:20px; }
+.pkg-col { padding:18px; border:1px solid var(--border); border-radius:14px; background:rgba(8,7,11,.36); }
+.pkg-col h4 { margin:0 0 14px; padding-bottom:12px; border-bottom:1px solid var(--border); color:var(--lavanda); font-size:13px; text-transform:uppercase; letter-spacing:.08em; }
+.pkg-col ul { list-style:none; display:grid; gap:10px; }
+.pkg-col li { position:relative; padding-left:16px; color:var(--t-2); font-size:13px; line-height:1.35; }
+.pkg-col li::before { content:""; position:absolute; left:0; top:7px; width:7px; height:7px; border-radius:2px; background:var(--grad); }
+.pkg-col b { color:var(--acid); font-size:18px; line-height:1; }
+.pkg-list strong { color:var(--acid); font-weight:800; }
 .pkg-price small { display:block; margin-top:4px; color:var(--t-3); font-size:13px; font-family:var(--font-body); font-weight:500; }
 .s21-closing-funnel { margin-top:0; padding:0; background:transparent; overflow:visible; }
 .s21-closing-funnel::before { display:none; }
@@ -1161,7 +1198,7 @@ html[lang="en"] .s21-nav-logo { display: none; }
 @media (max-width:980px){
   .s21-steps{grid-template-columns:repeat(3,1fr)} .s21-step:not(:last-child)::after{display:none}
   .s21-activations{grid-template-columns:1fr 1fr}.s21-activation,.s21-activation:nth-child(4),.s21-activation:nth-child(5){grid-column:span 1}.s21-activation.featured{grid-column:1 / -1}
-  .campaign-moments{grid-template-columns:1fr}.campaign-visual-grid.three{grid-template-columns:1fr 1fr}.measurement-grid,.measurement-grid.compact{grid-template-columns:repeat(2,1fr)}.s21-packages{grid-template-columns:1fr}
+  .campaign-moments{grid-template-columns:1fr}.campaign-visual-grid.three,.campaign-visual-grid.two,.phone-reference-grid{grid-template-columns:1fr 1fr}.measurement-grid,.measurement-grid.compact,.brand-offer-grid{grid-template-columns:repeat(2,1fr)}.s21-packages{grid-template-columns:1fr}
   .entry-map{grid-template-columns:1fr 60px 1fr}.minute21{grid-template-columns:1fr;gap:32px}.minute-score{max-width:520px;width:100%}
 }
 @media (max-width:640px){
@@ -1173,7 +1210,9 @@ html[lang="en"] .s21-nav-logo { display: none; }
   .key-pass-pitch .ps1{left:28%;top:13%}.key-pass-pitch .ps2{left:72%;top:28%}.key-pass-pitch .ps5{left:28%;top:72%}.key-pass-pitch .ps6{left:72%;top:87%}.pitch-center-key{font-size:12px;padding:15px 18px}.key-pass-lines{inset:28px;width:calc(100% - 56px);height:calc(100% - 56px)}
   .s21-challenge{grid-template-columns:1fr}.challenge-col,.challenge-col.digital{padding:26px}.challenge-col.digital h3{font-size:34px}
   .s21-steps,.s21-activations{display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;margin-inline:calc(var(--pad) * -1);padding:2px var(--pad) 16px;gap:12px}.s21-steps::-webkit-scrollbar,.s21-activations::-webkit-scrollbar{display:none}.s21-step{flex:0 0 78%;scroll-snap-align:start}.s21-activation,.s21-activation.featured,.s21-activation:nth-child(4),.s21-activation:nth-child(5){flex:0 0 84%;scroll-snap-align:start}
-  .campaign-visual-moment{padding:20px}.campaign-visual-grid.one,.campaign-visual-grid.three{grid-template-columns:1fr}.campaign-visual-grid.one .campaign-visual-card{display:block}.campaign-visual-grid.one .campaign-visual-card .activation-media{margin-bottom:18px}
+  .campaign-visual-moment{padding:20px}.campaign-visual-grid.one,.campaign-visual-grid.two,.campaign-visual-grid.three{grid-template-columns:1fr}.campaign-visual-grid.one .campaign-visual-card{display:block}.campaign-visual-grid.one .campaign-visual-card .activation-media{margin-bottom:18px}
+  .phone-reference-grid,.brand-offer-grid{display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;margin-inline:calc(var(--pad) * -1);padding:2px var(--pad) 16px;gap:12px}.phone-reference-grid::-webkit-scrollbar,.brand-offer-grid::-webkit-scrollbar{display:none}.phone-reference-card,.brand-offer-grid .campaign-visual-card{flex:0 0 84%;scroll-snap-align:start}.video-phone{width:min(100%,220px)}.youtube-chat-mock{min-height:260px}.asset-image-box{min-height:220px}
+  .pkg-split{grid-template-columns:1fr}
   .phone-mock{width:min(100%,360px);min-height:580px}.entry-map{grid-template-columns:1fr;gap:24px;padding:24px}.entry-arrows{height:60px;justify-items:center}.entry-arrows i{width:1px;height:100%;background:linear-gradient(180deg,var(--lavanda),var(--acid));grid-row:1;grid-column:1}.entry-arrows i::after{right:-3px;top:auto;bottom:0;border-left:3px solid transparent;border-right:3px solid transparent;border-top:6px solid var(--acid);border-bottom:0}.entry-goal{min-height:260px}
   .s21-experience .two-col{gap:50px}.minute21{padding:24px}.minute-score strong{font-size:60px}.activation-media{height:auto;min-height:0;aspect-ratio:auto}.s21-activation.featured .activation-media{min-height:0;aspect-ratio:auto}
 }
